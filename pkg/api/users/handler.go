@@ -74,7 +74,9 @@ func (h *handler) UpdateDetails(c echo.Context) error {
 		return c.JSON(http.StatusBadRequest, utility.CreateErrorResponse(err))
 	}
 
-	return c.JSON(http.StatusOK, resp)
+	return c.JSON(http.StatusOK, echo.Map{
+		"Updated": resp,
+	})
 }
 
 func (h *handler) DeleteUser(c echo.Context) error {
