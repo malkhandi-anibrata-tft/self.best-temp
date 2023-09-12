@@ -1,7 +1,6 @@
 package user
 
 import (
-	"fmt"
 	"time"
 
 	"github.com/malkhandi-anibrata-tft/self.best-temp/models"
